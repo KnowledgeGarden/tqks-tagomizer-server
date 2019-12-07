@@ -1,14 +1,28 @@
-/**
- * 
+/*
+ * Copyright 2019 TopicQuests
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions
+ * and limitations under the License.
  */
-package org.topicquests.ks.hypothesis;
+package org.topicquests.ks.tagomizer;
 
 import static io.javalin.apibuilder.ApiBuilder.before;
 import static io.javalin.apibuilder.ApiBuilder.get;
 
 import org.topicquests.ks.backside.javalin.Server;
-import org.topicquests.ks.hypothesis.util.Path;
-import org.topicquests.ks.hypothesis.util.ViewUtil;
+import org.topicquests.ks.tagomizer.hypothesis.HypViewerEnvironment;
+import org.topicquests.ks.tagomizer.hypothesis.HypothesisController;
+import org.topicquests.ks.tagomizer.util.Path;
+import org.topicquests.ks.tagomizer.util.ViewUtil;
 
 import io.javalin.Javalin;
 

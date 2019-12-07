@@ -1,1 +1,1 @@
-java -cp ./target/JavalinHypothesisViewer-0.1.0-SNAPSHOT-jar-with-dependencies.jar org.topicquests.ks.hypothesis.Main
+java -cp ./target/tqks-tagomizer-server-0.2.0-SNAPSHOT-jar-with-dependencies.jar org.topicquests.ks.tagomizer.Main

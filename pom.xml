@@ -2,12 +2,12 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.topicquests</groupId>
   <artifactId>tqks-tagomizer-server</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>0.2.0-SNAPSHOT</version>
   <name>tqks-tagomizer-server</name>
   <dependencies>
       <dependency>
       	<groupId>org.topicquests</groupId>
-      	<artifactId>JavalinBacksideCore</artifactId>
+      	<artifactId>tqks-javalin-backside-core</artifactId>
       	<version>0.2.0-SNAPSHOT</version>
       </dependency>
       <dependency>
