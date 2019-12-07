@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+
+
+<properties>
+
+	<parameter name="DatabaseName" value = "tagomizer_database" />
+	<parameter name="DatabaseSchema" value = "tq_tagomizer" />
+
+</properties>
+

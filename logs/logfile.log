@@ -1,0 +1,67 @@
+2019-12-05 16:07:02 DEBUG LoggingPlatform:38 - PostgresConnectionFactory starting
+2019-12-05 16:07:12 DEBUG LoggingPlatform:38 - GetUsers 0 5
+org.topicquests.ks.hypothesis.HypothesisDao@29fd0272
+2019-12-05 16:07:12 DEBUG LoggingPlatform:38 - DAO.getUsers [elog08@hypothes.is, Gardener@hypothes.is]
+2019-12-05 16:07:12 DEBUG LoggingPlatform:38 - DAO.getUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-05 16:07:12 DEBUG LoggingPlatform:38 - GetUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-05 16:11:59 DEBUG LoggingPlatform:38 - PostgresConnectionFactory starting
+2019-12-05 16:17:12 DEBUG LoggingPlatform:38 - PostgresConnectionFactory starting
+2019-12-05 16:18:40 DEBUG LoggingPlatform:38 - GetUsers 0 100
+org.topicquests.ks.hypothesis.HypothesisDao@51a64e6b
+2019-12-05 16:18:40 DEBUG LoggingPlatform:38 - DAO.getUsers [elog08@hypothes.is, Gardener@hypothes.is]
+2019-12-05 16:18:40 DEBUG LoggingPlatform:38 - DAO.getUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-05 16:18:40 DEBUG LoggingPlatform:38 - GetUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-05 17:34:04 DEBUG LoggingPlatform:38 - GetUsers 0 50
+org.topicquests.ks.hypothesis.HypothesisDao@51a64e6b
+2019-12-05 17:34:04 DEBUG LoggingPlatform:38 - DAO.getUsers [elog08@hypothes.is, Gardener@hypothes.is]
+2019-12-05 17:34:04 DEBUG LoggingPlatform:38 - DAO.getUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-05 17:34:04 DEBUG LoggingPlatform:38 - GetUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-05 17:44:19 DEBUG LoggingPlatform:38 - GetUsers 0 50
+org.topicquests.ks.hypothesis.HypothesisDao@51a64e6b
+2019-12-05 17:44:19 DEBUG LoggingPlatform:38 - DAO.getUsers [elog08@hypothes.is, Gardener@hypothes.is]
+2019-12-05 17:44:19 DEBUG LoggingPlatform:38 - DAO.getUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-05 17:44:19 DEBUG LoggingPlatform:38 - GetUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-05 18:07:59 DEBUG LoggingPlatform:38 - GetUsers 0 50
+org.topicquests.ks.hypothesis.HypothesisDao@51a64e6b
+2019-12-05 18:07:59 DEBUG LoggingPlatform:38 - DAO.getUsers [elog08@hypothes.is, Gardener@hypothes.is]
+2019-12-05 18:07:59 DEBUG LoggingPlatform:38 - DAO.getUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-05 18:07:59 DEBUG LoggingPlatform:38 - GetUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-06 11:30:35 DEBUG LoggingPlatform:38 - PostgresConnectionFactory starting
+2019-12-06 12:38:58 DEBUG LoggingPlatform:38 - GetUsers 0 100
+org.topicquests.ks.hypothesis.HypothesisDao@238fcb79
+2019-12-06 12:38:58 DEBUG LoggingPlatform:38 - DAO.getUsers [elog08@hypothes.is, Gardener@hypothes.is]
+2019-12-06 12:38:58 DEBUG LoggingPlatform:38 - DAO.getUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-06 12:38:58 DEBUG LoggingPlatform:38 - GetUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-06 12:39:28 DEBUG LoggingPlatform:38 - GetUsers 0 50
+org.topicquests.ks.hypothesis.HypothesisDao@238fcb79
+2019-12-06 12:39:28 DEBUG LoggingPlatform:38 - DAO.getUsers [elog08@hypothes.is, Gardener@hypothes.is]
+2019-12-06 12:39:28 DEBUG LoggingPlatform:38 - DAO.getUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-06 12:39:28 DEBUG LoggingPlatform:38 - GetUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-06 13:04:22 DEBUG LoggingPlatform:38 - GetUsers 0 50
+org.topicquests.ks.hypothesis.HypothesisDao@238fcb79
+2019-12-06 13:04:22 DEBUG LoggingPlatform:38 - DAO.getUsers [elog08@hypothes.is, Gardener@hypothes.is]
+2019-12-06 13:04:22 DEBUG LoggingPlatform:38 - DAO.getUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-06 13:04:22 DEBUG LoggingPlatform:38 - GetUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-06 14:47:27 DEBUG LoggingPlatform:38 - GetUsers 0 50
+org.topicquests.ks.hypothesis.HypothesisDao@238fcb79
+2019-12-06 14:47:27 DEBUG LoggingPlatform:38 - DAO.getUsers [elog08@hypothes.is, Gardener@hypothes.is]
+2019-12-06 14:47:27 DEBUG LoggingPlatform:38 - DAO.getUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-06 14:47:27 DEBUG LoggingPlatform:38 - GetUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-06 16:10:10 DEBUG LoggingPlatform:38 - GetUsers 0 50
+org.topicquests.ks.hypothesis.HypothesisDao@238fcb79
+2019-12-06 16:10:10 DEBUG LoggingPlatform:38 - DAO.getUsers [elog08@hypothes.is, Gardener@hypothes.is]
+2019-12-06 16:10:10 DEBUG LoggingPlatform:38 - DAO.getUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-06 16:10:10 DEBUG LoggingPlatform:38 - GetUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-06 18:52:23 DEBUG LoggingPlatform:38 - GetUsers 0 50
+org.topicquests.ks.hypothesis.HypothesisDao@238fcb79
+2019-12-06 18:52:23 DEBUG LoggingPlatform:38 - DAO.getUsers [elog08@hypothes.is, Gardener@hypothes.is]
+2019-12-06 18:52:23 DEBUG LoggingPlatform:38 - DAO.getUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-06 18:52:23 DEBUG LoggingPlatform:38 - GetUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-07 11:35:06 DEBUG LoggingPlatform:38 - PostgresConnectionFactory starting
+2019-12-07 11:38:17 DEBUG LoggingPlatform:38 - PostgresConnectionFactory starting
+2019-12-07 11:40:20 DEBUG LoggingPlatform:38 - PostgresConnectionFactory starting
+2019-12-07 13:18:52 DEBUG LoggingPlatform:38 - GetUsers 0 50
+org.topicquests.ks.hypothesis.HypothesisDao@3a26f459
+2019-12-07 13:18:52 DEBUG LoggingPlatform:38 - DAO.getUsers [elog08@hypothes.is, Gardener@hypothes.is]
+2019-12-07 13:18:52 DEBUG LoggingPlatform:38 - DAO.getUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
+2019-12-07 13:18:52 DEBUG LoggingPlatform:38 - GetUsers+ ["elog08@hypothes.is","Gardener@hypothes.is"]
