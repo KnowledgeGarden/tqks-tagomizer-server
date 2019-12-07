@@ -52,4 +52,9 @@
 			</plugin>
     </plugins>
   </build>
+  <url>https://github.com/KnowledgeGarden/tqks-tagomizer-server</url>
+  <organization>
+  	<name>TopicQuestsFoundation</name>
+  	<url>http://www.topicquests.org/</url>
+  </organization>
 </project>
