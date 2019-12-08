@@ -60,26 +60,10 @@ public interface ISQL {
 	//		"INSERT  into tq_tagomizer.texts VALUES ( ?, ?, (to_tsvector( ? ) ) ON CONFLICT DO NOTHING";
 
 
-	///////////////////////////
-	// These are for testing code for the backside server
-	///////////////////////////
-	/**
-	 * Gather Annotations by URL
-	 */
-//	public static final String GATHER_RESOURCE_BY_URL = 
-//			"SELECT text from tq_tagomizer.annotations where document_id IN "+
-//			"( SELECT document_id from tq_tagomizer.documents where url=?)";
 	
-	/**
-	 * Gather Resources (documents) by Tag
-	 * ### tq_tagomizer.tag_ref
-	 */
-//	public static final String GATHER_RESOURCES_BY_TAG =
-//			"SELECT DISTINCT title, document_id from tq_tagomizer.document where document_id IN "+
-//			"( SELECT document_id from tq_tagomizer.tag_ref where tag_id=?)";
-	// from JavalinHypothesis HypothesisDao
-	
-	/* fixed */
+	public static final String GET_TEXT_BY_RESOURCE =
+			"SELECT text FROM tq_tagomizer.annotations WHERE language=? AND document_id=?";
+
 	public static final String GET_RESOURCES_BY_USER =
 			"SELECT DISTINCT tq_tagomizer.document.title, tq_tagomizer.document.document_id, url, text FROM tq_tagomizer.document "+
 					"JOIN tq_tagomizer.annotations ON tq_tagomizer.document.document_id = tq_tagomizer.annotations.document_id "+

@@ -322,6 +322,7 @@ public class PivotSuite {
 		List<JSONObject> groups;
 		List<JSONObject> tags;
 		List<String> users;
+		List<String> text;
 		try {
 			IResult x;
 			 conn = provider.getConnection();
@@ -332,6 +333,9 @@ public class PivotSuite {
 		     tags = (List<JSONObject>)x.getResultObject();
 		     x = this._listUsersByResource(conn, r, docId);
 		     users = (List<String>)x.getResultObject();
+		     x = this.getTextByResourceAndLanguage(conn, r, docId, "en");
+		     text = (List<String>)x.getResultObject();
+		     pivots.put("text", text);
 		     pivots.put("groups", groups);
 		     pivots.put("users", users);
 		     pivots.put("tags", tags);
@@ -377,6 +381,25 @@ public class PivotSuite {
 	///////////////////////////
 	// Utilities
 	///////////////////////////
+
+	IResult getTextByResourceAndLanguage(IPostgresConnection conn, IResult r, String docId, String language) throws Exception {
+		IResult result = new ResultPojo();
+		List<String> l = new ArrayList<String>();
+		result.setResultObject(l);
+		String sql = ISQL.GET_TEXT_BY_RESOURCE;
+		Object [] obj = new Object[2];
+		obj[0] = language;
+		obj[1] = docId;
+		conn.executeSelect(sql, r, obj);
+		ResultSet rs = (ResultSet)r.getResultObject();
+		if (rs != null) {
+			JSONObject jo;
+			if (rs.next()) {
+				l.add(rs.getString(1));
+			}
+		}
+		return result;
+	}
 
 	IResult getDocTitleAndUrl(IPostgresConnection conn, IResult r, String docId) throws Exception {
 		IResult result = new ResultPojo();
