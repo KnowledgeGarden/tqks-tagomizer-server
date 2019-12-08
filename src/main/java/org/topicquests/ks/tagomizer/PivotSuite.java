@@ -450,6 +450,7 @@ public class PivotSuite {
 	}
 
 	IResult textSearchByQuery(IPostgresConnection conn, IResult r, String query, int start, int count) throws Exception {
+		environment.logDebug("TextQuery- "+query);
 		IResult result = new ResultPojo();
 		List<JSONObject> l = new ArrayList<JSONObject>();
 		result.setResultObject(l);
@@ -460,15 +461,20 @@ public class PivotSuite {
 		obj[2] = start;
 		conn.executeSelect(sql, r, obj);
 		ResultSet rs = (ResultSet)r.getResultObject();
+		environment.logDebug("TextQuery-1 "+rs);
 		if (rs != null) {
+			environment.logDebug("TextQuery-2 ");
 			JSONObject jo;
 			while (rs.next()) {
 				jo = new JSONObject();
+				environment.logDebug("TextQuery-4");
 				jo.put("docId", rs.getString(1));
+				environment.logDebug("TextQuery-5 "+jo);
 				jo.put("label", rs.getString(2));
 				l.add(jo);
 			}
 		}
+		environment.logDebug("TextQuery+ "+l);
 		return result;
 	}
 

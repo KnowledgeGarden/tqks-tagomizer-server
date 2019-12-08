@@ -165,13 +165,13 @@ public interface ISQL {
 					"ORDER BY tq_tagomizer.document.title ASC LIMIT ? OFFSET ?";
 
 	public static final String GET_GROUPS_BY_RESOURCE =
-			"SELECT DISTINCT group_id, name from tq_tagomizer.document " +
+			"SELECT DISTINCT group_id, name FROM tq_tagomizer.document " +
 				    "JOIN tq_tagomizer.group ON tq_tagomizer.document.group_id = tq_tagomizer.group.id "+
 				    "where document_id=?";
 	
 	// should return a List<String>
 	public static final String GET_TEXT_BY_QUERY = 
-			"select tq_tagomizer.annotations.document_id, tq_tagomizer.document.title from tq_tagomizer.annotations  "+
+			"SELECT DISTINCT tq_tagomizer.annotations.document_id, tq_tagomizer.document.title FROM tq_tagomizer.annotations  "+
 			"JOIN tq_tagomizer.document ON tq_tagomizer.annotations.document_id = tq_tagomizer.document.document_id " +
 			"where tq_tagomizer.annotations.language = 'en' AND to_tsvector('english', tq_tagomizer.annotations.text) @@ phraseto_tsquery('english', ?) "+
 			"ORDER BY tq_tagomizer.document.title ASC LIMIT ? OFFSET ?";
