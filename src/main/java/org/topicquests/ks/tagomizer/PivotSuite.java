@@ -173,7 +173,8 @@ public class PivotSuite {
 					} else if (id.equals(jo.getAsString("docId")))
 						addToTextList(jo, rs.getString(4));
 					else {
-						l.add(jo);
+						if (!l.contains(jo))
+							l.add(jo);
 						jo = new JSONObject();
 						jo.put("title", rs.getString(1));
 						jo.put("docId", id);
@@ -461,17 +462,14 @@ public class PivotSuite {
 		obj[2] = start;
 		conn.executeSelect(sql, r, obj);
 		ResultSet rs = (ResultSet)r.getResultObject();
-		environment.logDebug("TextQuery-1 "+rs);
 		if (rs != null) {
-			environment.logDebug("TextQuery-2 ");
 			JSONObject jo;
 			while (rs.next()) {
 				jo = new JSONObject();
-				environment.logDebug("TextQuery-4");
 				jo.put("docId", rs.getString(1));
-				environment.logDebug("TextQuery-5 "+jo);
 				jo.put("label", rs.getString(2));
-				l.add(jo);
+				if (!l.contains(jo))
+					l.add(jo);
 			}
 		}
 		environment.logDebug("TextQuery+ "+l);
@@ -535,7 +533,8 @@ public class PivotSuite {
 				} else if (id.equals(jo.getAsString("docId")))
 					addToTextList(jo, rs.getString(4));
 				else {
-					l.add(jo);
+					if (!l.contains(jo))
+						l.add(jo);
 					jo = new JSONObject();
 					jo.put("title", rs.getString(1));
 					jo.put("docId", id);
@@ -584,7 +583,8 @@ public class PivotSuite {
 				} else if (id.equals(jo.getAsString("docId")))
 					addToTextList(jo, rs.getString(4));
 				else {
-					l.add(jo);
+					if (!l.contains(jo))
+						l.add(jo);
 					jo = new JSONObject();
 					jo.put("title", rs.getString(1));
 					jo.put("docId", id);
@@ -663,7 +663,8 @@ public class PivotSuite {
 				} else if (id.equals(jo.getAsString("docId")))
 					addToTextList(jo, rs.getString(4));
 				else {
-					l.add(jo);
+					if (!l.contains(jo))
+						l.add(jo);
 					jo = new JSONObject();
 					jo.put("title", rs.getString(1));
 					jo.put("docId", id);
@@ -725,7 +726,8 @@ public class PivotSuite {
 				jo = new JSONObject();
 				jo.put("label", rs.getString(1));
 				jo.put("id", rs.getString(2));
-				l.add(jo);
+				if (!l.contains(jo))
+					l.add(jo);
 			}
 		}
 		return result;
@@ -779,7 +781,8 @@ public class PivotSuite {
 				jo = new JSONObject();
 				jo.put("label", rs.getString(1));
 				jo.put("id", rs.getString(2));
-				l.add(jo);
+				if (!l.contains(jo))
+					l.add(jo);
 			}
 		}
 		return result;
@@ -835,7 +838,8 @@ public class PivotSuite {
 				jo = new JSONObject();
 				jo.put("label", rs.getString(1));
 				jo.put("id", rs.getString(2));
-				l.add(jo);
+				if (!l.contains(jo))
+				 l.add(jo);
 			}
 		}
 		return result;		
