@@ -59,6 +59,7 @@ public class Main extends Server {
             get(Path.Web.HYP_USERS, hypController.handleGetUsers);
             get(Path.Web.HYP_TAGS, hypController.handleGetTags);
             get(Path.Web.HYP_GROUPS, hypController.handleGetGroups);
+            get(Path.Web.HYP_TRIPLES, hypController.handleGetTriples);
             get(Path.Web.HYP_TAG_PIV, hypController.handleGetTagPivot);
             get(Path.Web.HYP_USR_PIV, hypController.handleGetUserPivot);
             get(Path.Web.HYP_RES_PIV, hypController.handleGetResourcePivot);

@@ -98,6 +98,16 @@ public class HypothesisController {
 		JSONObject jo = hypDao.getTagPivot(id, offset, count);
 		ctx.json(jo);
 	};
+	
+	public Handler handleGetTriples = ctx -> {
+		String offset = ctx.pathParam("offset");
+		String count = ctx.pathParam("count");
+		int o = Integer.parseInt(offset);
+		int c = Integer.parseInt(count);
+
+		JSONArray jo = hypDao.getTriples(o, c);
+		ctx.json(jo);
+	};
 	public Handler handleGetUserPivot = ctx -> {
 		String id = ctx.pathParam("user");
 		String offset = ctx.pathParam("offset");

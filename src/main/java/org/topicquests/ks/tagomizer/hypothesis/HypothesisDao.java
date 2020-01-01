@@ -98,6 +98,14 @@ public class HypothesisDao {
 		return result;
 	}
 
+	public JSONArray getTriples(int offset, int count) {
+		JSONArray result = new JSONArray();
+		IResult r = pivots.listTriples(offset, count);
+		List<JSONObject> x = (List<JSONObject>)r.getResultObject();
+		result = toJA(x);	
+		return result;
+	}
+
 	public JSONArray getTags(String _offset, String _count) {
 		JSONArray result = null;
 		IResult r = pivots.listAllTags(Integer.parseInt(_offset), Integer.parseInt(_count));

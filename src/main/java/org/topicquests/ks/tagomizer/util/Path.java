@@ -57,6 +57,8 @@ public class Path {
         public static final String HYP_USR_BY_RES = "/hyp/usrres/:resource/:offset/:count";
         public static final String HYP_USR_BY_TAG = "/hyp/usrtag/:tag/:offset/:count";
         public static final String HYP_USR_BY_GRP = "/hyp/usrgrp/:group/:offset/:count";
+        // triples
+        public static final String HYP_TRIPLES = "/hyp/triples/:offset/:count";
 
 
         public static final String HYP_PIV_2 = "/hyp/piv2/:featureA/featureB/:offset/:count";
