@@ -31,7 +31,7 @@ public class HypViewerEnvironment extends RootEnvironment {
 	 * 
 	 */
 	public HypViewerEnvironment() {
-		super("config-props.xml", "logger.properties");
+		super("config-props.xml");
 		String dbname = getStringProperty("DatabaseName");
 		String schema = getStringProperty("DatabaseSchema");
 		pgProvider = new PostgresConnectionFactory(dbname, schema);

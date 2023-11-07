@@ -16,16 +16,13 @@
 package org.topicquests.ks.tagomizer.hypothesis;
 
 import org.topicquests.ks.tagomizer.PivotSuite;
-import org.topicquests.pg.PostgresConnectionFactory;
-import org.topicquests.pg.api.IPostgresConnection;
-import org.topicquests.support.ResultPojo;
 import org.topicquests.support.api.IResult;
 
 import net.minidev.json.JSONArray;
 import net.minidev.json.JSONObject;
 
-import java.sql.ResultSet;
 import java.util.*;
+import org.tinylog.Logger;
 /**
  * @author jackpark
  *
@@ -79,14 +76,14 @@ public class HypothesisDao {
 		JSONArray result = new JSONArray();
 		IResult r = pivots.listAllUsers();
 		List<String> l = (List<String>)r.getResultObject();
-		environment.logDebug("DAO.getUsers "+l);
+		Logger.debug("DAO.getUsers "+l);
 		if (l != null && !l.isEmpty()) {
 			Iterator<String>itr = l.iterator();
 			while (itr.hasNext()) {
 				result.add(itr.next());
 			}
 		}	
-		environment.logDebug("DAO.getUsers+ "+result);
+		Logger.debug("DAO.getUsers+ "+result);
 		return result;
 	}
 

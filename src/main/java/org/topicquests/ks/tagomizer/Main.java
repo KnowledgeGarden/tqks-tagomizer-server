@@ -15,7 +15,6 @@
  */
 package org.topicquests.ks.tagomizer;
 
-import static io.javalin.apibuilder.ApiBuilder.before;
 import static io.javalin.apibuilder.ApiBuilder.get;
 
 import org.topicquests.ks.backside.javalin.Server;

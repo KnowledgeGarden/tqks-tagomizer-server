@@ -15,18 +15,13 @@
  */
 package org.topicquests.ks.tagomizer.hypothesis;
 
-import java.util.Map;
-
-import org.topicquests.pg.api.IPostgresConnection;
-import org.topicquests.support.ResultPojo;
-import org.topicquests.support.api.IResult;
 
 import io.javalin.http.Handler;
 import java.util.*;
 
 import net.minidev.json.JSONArray;
 import net.minidev.json.JSONObject;
-
+import org.tinylog.Logger;
 /**
  * @author jackpark
  *
@@ -68,9 +63,9 @@ public class HypothesisController {
 	public Handler handleGetUsers = ctx -> {
 		String offset = ctx.pathParam("offset");
 		String count = ctx.pathParam("count");
-		environment.logDebug("GetUsers "+offset+" "+count+"\n"+hypDao);
+		Logger.debug("GetUsers "+offset+" "+count+"\n"+hypDao);
         JSONArray hits = hypDao.getUsers(offset, count);
-		environment.logDebug("GetUsers+ "+hits);
+		Logger.debug("GetUsers+ "+hits);
 		         //ship JSON
         ctx.json(hits);
 		
